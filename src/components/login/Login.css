@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-content {
+  position: relative;
+  flex-basis: 70%;
+  /* background-color: #000000; */
+}
+
+.img-content img {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.img-content h2 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 2.8rem;
+  padding: 1.5rem 2rem;
+  width: 35rem;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo img {
+  margin: 0.5rem;
+}
+
+.form-login {
+  padding: 0.3rem 10rem;
+}
+
+.login h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #424242;
+}
+
+.login p {
+  padding: 5px 0;
+  width: 15rem;
+  font-weight: 700;
+  color: #424242;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.semua {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+input[type="checkbox"]{
+  width: 1.2rem;
+}
+
+input {
+  border: none;
+  padding: 1rem 0 0 0;
+  margin: 0;
+  outline: none;
+  font-size: 17px;
+  width: 100%;
+}
+
+.input {
+  border: 1px solid #e0e0e0;
+  width: 25rem;
+  padding: 0.5rem;
+  justify-content: space-around;
+  /* gap: 1px; */
+  border-radius: 5px;
+}
+
+.input-box {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  width: 25rem;
+}
+
+.input label {
+  color: #d0cccc;
+}
+
+.remember {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rmb-txt {
+  color: #d0cccc;
+  padding-right: 6.5rem;
+}
+
+.forget-pwd {
+  color: #424242;
+  text-decoration: none;
+}
+
+.button .btn-signup a {
+  text-decoration: none;
+  color: #d0cccc;
+}
+
+button{
+  height: 3rem;
+  width: 8rem;
+}
+
+.button .btn-login a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-login {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.btn-signup {
+  background-color: transparent;
+  color: #d0cccc;
+  padding: 4px 20px;
+  border-radius: 5px;
+  border: 1px solid #d0cccc;
+}
+
+/* .btn-login:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.5s ease;
+} */
+
+.btn-signup:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.pr {
+  padding: 0 10rem;
+  color: #d0cccc;
+  font-size: 15px;
+}
+
+.pr span {
+  color: #000000;
+}

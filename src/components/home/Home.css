@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-menu {
+  width: 100%;
+  height: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-menu nav {
+  display: flex;
+  width: 100%;
+  padding: 9px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.all {
+  display: flex;
+}
+
+.all p {
+  /* padding-top: 0.5rem; */
+  padding-left: 2rem;
+}
+
+.content-slider {
+  padding: 2rem;
+}
+
+.box-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  z-index: 2;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  right: 0;
+}
+
+.btn-search {
+  border-radius: 15px;
+  width: 30rem;
+  padding: 0.5rem 2rem 0.5rem 3rem;
+  border: 1px solid #424242;
+  z-index: 1;
+}
+
+input {
+  /* border-radius: 15px;
+    width: 30rem;
+    height: 2rem;
+    padding: 0 2rem; */
+  /* border: 1px solid black; */
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.logo h4 {
+  font-size: 1.3rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.book-slider {
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.book-card {
+  position: relative;
+  padding: 2rem 0;
+  display: grid;
+}
+
+.text-card1 {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.474);
+  width: 30rem;
+  height: 7rem;
+  border-radius: 0 0 12px 12px;
+  color: #ffff;
+  padding-top: 1rem;
+}
+
+.text-card {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.474);
+  width: 25rem;
+  height: 7rem;
+  border-radius: 0 0 12px 12px;
+  color: #ffff;
+  padding-top: 1rem;
+}
+
+.text-card1 h4 {
+  padding: 1rem 0 0.5rem 1.5rem;
+}
+
+.text-card1 p {
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.text-card2 {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.474);
+  width: 30rem;
+  height: 7rem;
+  border-radius: 0 0 12px 12px;
+  color: #ffff;
+  padding-top: 1rem;
+}
+
+.text-card2 h4 {
+  padding: 1rem 0 0.5rem 1.5rem;
+}
+
+.text-card2 p {
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.text-card3 {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.474);
+  width: 30rem;
+  height: 7rem;
+  border-radius: 0 0 12px 12px;
+  color: #ffff;
+  padding-top: 1rem;
+}
+
+.text-card3 h4 {
+  padding: 1rem 0 0.5rem 1.5rem;
+}
+
+.text-card3 p {
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.dilan {
+  width: 30rem;
+  height: 15rem;
+  border-radius: 12px;
+}
+
+.photo-cover {
+  width: 25rem;
+  height: 15rem;
+  border-radius: 12px;
+}
+
+.ubur {
+  width: 30rem;
+  height: 15rem;
+}
+
+.laskar {
+  display: flex;
+  border-radius: 12px;
+  width: 30rem;
+  height: 15rem;
+}
+
+.list-book h3 {
+  padding-left: 2rem;
+}
+
+.listbook-content {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card-listbook {
+  display: grid;
+  /* margin: 1rem; */
+  width: 250px;
+  height: 45vh;
+  font-family: roboto;
+  border-radius: 18px;
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(59, 59, 59, 0.338);
+  /* box-shadow: 5px 5px 15px (rgb(0, 0, 0)); */
+  text-align: center;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.card-image {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 11rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* background-size: cover;
+    background-position: center; */
+}
+
+.card-listbook:hover {
+  transform: translateY(-10px);
+}
