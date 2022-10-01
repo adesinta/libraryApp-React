@@ -5,7 +5,7 @@ import "./Register.css"
 
 const Register = () => {
   return (
-    <div className="container">
+    <div className="container-register">
       <div className="img-content">
         <div>
           <h2>Book is a window to the world</h2>

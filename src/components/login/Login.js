@@ -5,7 +5,7 @@ import "./Login.css"
 
 const Login = () => {
   return (
-    <div className="container">
+    <div className="container-login">
       <div className="img-content">
         <div>
           <h2>Book is a window to the world</h2>

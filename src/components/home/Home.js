@@ -13,7 +13,7 @@ import reactNativePhoto from "../../assets/reactnative.png";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="container-home">
       <div className="header-menu">
         <nav>
           <div className="all">
