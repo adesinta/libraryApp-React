@@ -1,9 +1,32 @@
 import { Link } from "react-router-dom";
+import React, {useState, useEffect} from "react";
 import welcome from "../../assets/welcome.png";
 import logo from "../../assets/bookshelf.png";
 import "./Register.css"
 
 const Register = () => {
+  const [person, setPerson] = useState({
+    userName: '',
+    fullName: '',
+    email: '',
+    password : ''
+  })
+
+  const handleSignup = (e) =>{
+    e.preventDefault()
+    alert('Berhasil terdaftar')
+    localStorage.setItem('USER_LOGIN', JSON.stringify(person))
+    localStorage.getItem('USER_LOGIN')
+    
+  }
+  
+  useEffect(() =>{
+    // console.log(person.userName)
+    // console.log(person.fullName)
+    // console.log(person.email)
+    // console.log(person.password)
+  }, [person])
+
   return (
     <div className="container-register">
       <div className="img-content">
@@ -14,7 +37,7 @@ const Register = () => {
       </div>
       <div className="login-content">
         <div className="logo">
-          <img src={logo}alt="" width="80px" />
+        <Link to={"/home"}><img src={logo} alt="" width="80px" /></Link> 
         </div>
 
         <div className="semua">
@@ -28,34 +51,34 @@ const Register = () => {
                   </div>
                 </div>
 
-                <form action="" className="form">
+                <form className="form">
                   <div className="input-box">
                     <div className="input">
-                      <label for="">Username</label>
+                      <label htmlFor="username">Username</label>
                       <br />
-                      <input type="text" placeholder="Enter Username" />
+                      <input type="text" id="username" placeholder="Enter Username" onChange={(e) => setPerson({...person, userName: e.target.value})}/>
                     </div>
                     <div className="input">
-                      <label for="">Full Name</label>
+                      <label htmlFor="fullname">Full Name</label>
                       <br />
-                      <input type="text" placeholder="Enter Your Full Name" />
+                      <input type="text" id="fullname" placeholder="Enter Your Full Name" onChange={(e) => setPerson({...person, fullName: e.target.value})} />
                     </div>
                     <div className="input">
-                      <label for="">Email</label>
+                      <label htmlFor="email">Email</label>
                       <br />
-                      <input type="email" placeholder="example@gmail.com" />
+                      <input type="email" id="email" placeholder="example@gmail.com" onChange={(e) => setPerson({...person, email: e.target.value})} />
                     </div>
                     <div className="input">
-                      <label for="">Password</label>
+                      <label htmlFor="password">Password</label>
                       <br />
-                      <input type="password" placeholder="Enter Password" />
+                      <input type="password" id="password" placeholder="Enter Password" onChange={(e) => setPerson({...person, password: e.target.value})}/>
                     </div>
                   </div>
                   <div className="button">
-                    <button type="submit" className="btn-signup">
+                    <button onClick={handleSignup} className="btn-signup">
                       <Link to={"/register"}>Sign Up</Link>
                     </button>
-                    <button type="submit" className="btn-login">
+                    <button  className="btn-login">
                       <Link to={"/"}>Login</Link>
                     </button>
                   </div>

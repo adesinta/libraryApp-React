@@ -14,7 +14,7 @@ const Login = () => {
       </div>
       <div className="login-content">
         <div className="logo">
-          <img src={logo} alt="" width="80px" />
+        <Link to={"/home"}><img src={logo} alt="" width="80px" /></Link> 
         </div>
         <div className="semua">
           <div className="form-all">

@@ -6,10 +6,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-.header-menu {
-  width: 100%;
-  height: 3rem;
+.allbar{
+  display: flex;
 }
+
+/* .header-menu {
+  width: 100%;
+  height: 1rem;
+} */
 
 .container-home {
   display: flex;
@@ -18,10 +22,12 @@
 
 .header-menu nav {
   display: flex;
-  width: 100%;
+  position: absolute;
+  width: 80%;
   padding: 9px;
   align-items: center;
   justify-content: space-between;
+  /* border: 1px solid red; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -34,9 +40,9 @@
   padding-left: 2rem;
 }
 
-.content-slider {
+/* .content-slider {
   padding: 2rem;
-}
+} */
 
 .box-search {
   position: relative;
@@ -86,8 +92,64 @@ input {
   height: 40px;
 }
 
+.bar{
+  display: flex;
+}
+
+.side-bar{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* position: fixed; */
+  width: 306px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all .5s ease;
+}
+.tes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.side-bar img{
+  padding-top: 1rem;
+  width: 150px;
+  justify-content: center;
+}
+
+.side-bar h4{
+  text-align: center;
+}
+
+.isi-sidebar{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.isi-sidebar p{
+  margin-top: 10px;
+}
+
+.burger-menu{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-left: 15rem;
+}
+
+.burger-menu div{
+  background-color: #888888;
+  border-radius: 10px;
+  margin-top: 5px;
+  height: 3px;
+}
+
 .book-slider {
-  margin-top: 0.2rem;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -95,7 +157,8 @@ input {
 
 .book-card {
   position: relative;
-  padding: 2rem 0;
+  z-index: -1;
+  padding: 6rem 0 0 0;
   display: grid;
 }
 
@@ -114,7 +177,7 @@ input {
 .text-card {
   position: absolute;
   z-index: 1;
-  margin-top: 10rem;
+  margin-top: 14rem;
   background-color: rgba(0, 0, 0, 0.474);
   width: 25rem;
   height: 7rem;
@@ -199,10 +262,11 @@ input {
 }
 
 .list-book h3 {
-  padding-left: 2rem;
+  padding: 2rem ;
 }
 
 .listbook-content {
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -212,7 +276,7 @@ input {
   display: grid;
   /* margin: 1rem; */
   width: 250px;
-  height: 45vh;
+  height: 36vh;
   font-family: roboto;
   border-radius: 18px;
   background: white;
@@ -227,7 +291,7 @@ input {
 .card-image {
   border-radius: 15px 15px 0 0;
   width: 100%;
-  height: 11rem;
+  height: 9rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   /* background-size: cover;
